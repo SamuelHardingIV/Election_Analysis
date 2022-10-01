@@ -1,4 +1,4 @@
-# Election_Analysis
+# Election_Analysis #
 ## Overview of Election Audit ##
 ### Purpose ###
 	The purpose of this project is to deliver an election analysis on what county had the most votes, which candidate has the most votes, winning percentage differentiation and largest turn out. We were given raw data based on ballots votes, mail-in votes etc.
