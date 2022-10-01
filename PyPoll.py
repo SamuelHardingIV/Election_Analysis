@@ -62,4 +62,19 @@ winning_candidate_summary = (
     f"Winning Percentage: {winning_percentage:.1f}%\n"
     f"-------------------------\n")
 
-print(winning_candidate_summary)
+#print(winning_candidate_summary)
+
+with open(file_to_save, "w") as txt_file:
+    election_results = (
+        f"\nElection Results\n"
+        f"-------------------------\n"
+        f"Total Votes: {total_votes:,}\n"
+        f"-------------------------\n")
+    print(election_results, end="")
+
+    candidate_results = (
+        f"{candidate_name}:  {vote_percentage:.f}% ({votes: ,})\n")
+    
+    print(candidate_results)
+    txt_file.write(election_results)
+    txt_file.write(candidate_results)
